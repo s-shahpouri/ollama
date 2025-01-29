@@ -24,8 +24,7 @@ Start the ollama server:
 
    ```bash
    ollama serve
-Run the model: To interact with SERA, run:
-
+Run the model: To interact with SERA, run
    ```bash
    ollama run SERA
 
