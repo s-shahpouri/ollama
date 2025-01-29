@@ -19,12 +19,15 @@ SERA is an AI-powered assistant designed to help users with medical inquiries in
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/s-shahpouri/ollama.git
+   
 Install the required dependencies:
 Start the ollama server:
 
    ```bash
    ollama serve
+
 Run the model: To interact with SERA, run
+
    ```bash
    ollama run SERA
 
