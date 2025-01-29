@@ -1,57 +1,49 @@
-# My Repository
+# SERA: AI Assistant for Medical Inquiries
 
-Welcome to my GitHub repository! This repository contains the files from my local folder that I pushed to GitHub.
+SERA is an AI-powered assistant designed to help users with medical inquiries in both English and Dutch. It is integrated with a hospital setting in Groningen, providing assistance with tasks such as appointment booking and general medical questions.
 
-## Table of Contents
+## Features
 
-- [About](#about)
-- [Setup](#setup)
-- [Usage](#usage)
-- [License](#license)
+- **Multilingual support**: SERA can communicate in both English and Dutch.
+- **Medical Assistance**: Provides information related to healthcare, appointments, and medical procedures.
+- **Customizable Model**: SERA is built using the `deepseek-r1:8b` model, modified through a custom `Modelfile`.
 
-## About
+## Requirements
 
-This repository is created as part of a project to demonstrate how to push local files to GitHub for the first time. The folder contains important files and resources related to the project.
+- Python 3.x
+- ollama (for AI model handling)
+- Requests (for interacting with local API)
 
-## Setup
+## Installation
 
-To set up the project locally, follow these steps:
-
-1. Clone the repository to your local machine:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/my-repo.git
-Navigate to the project directory:
+Install the required dependencies:
+Start the ollama server:
 
-  ```bash
-  cd my-repo
-Install any dependencies (if applicable). For example, if it’s a Python project:
+   ```bash
+   ollama serve
+Run the model: To interact with SERA, run:
 
-  ```bash
-  pip install -r requirements.txt
-Usage
-Once the repository is set up locally, you can start using the project as intended. Add instructions here based on what your project does.
+   ```bash
+   ollama run SERA
+How It Works
+Modelfile Setup: The Modelfile contains the necessary configuration to create and customize the SERA model.
 
-For example, if your project is a script:
+FROM: Specifies the base model (deepseek-r1:8b).
+PARAMETER:  temperature = 1.
+SYSTEM: Defines SERA's role and purpose in the hospital setting.
 
-  ```bash
-  python script_name.py
+
+Contribution
+Feel free to fork this repository and submit pull requests. If you have any suggestions or improvements, open an issue!
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Made with ❤️ by Sama
 
 
-### Steps to customize:
-1. **About**: Provide a brief description of what the project is.
-2. **Setup**: Add setup instructions specific to your project, such as cloning the repository or installing dependencies.
-3. **Usage**: Explain how to use your project. For example, run scripts, start a web app, etc.
-4. **License**: If you have a license for your project, mention it (like MIT). Otherwise, you can remove that section.
 
-### To add this file to your repository:
-1. Create a `README.md` file in the root of your repository.
-2. Copy and paste the content above, and customize it for your project.
-3. Add and commit the `README.md` file:
-   ```bash
-   git add README.md
-   git commit -m "Add README"
-   git push origin master
+
+
