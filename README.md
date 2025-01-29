@@ -28,6 +28,7 @@ Run the model: To interact with SERA, run:
 
    ```bash
    ollama run SERA
+
 How It Works
 Modelfile Setup: The Modelfile contains the necessary configuration to create and customize the SERA model.
 
